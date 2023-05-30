@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mobile-view-1</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Todo App UI Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
+
 <body>
-    <div class="heading">
-        <h1> <span style="color: #424242;">Tasks</span><span style="color:#00A5EC ;">List</span></h1>
-    </div>  
-    <div class="task">
-        <a href="./index2.html" class="new"><div class="plus">+</div>
-        <div class="circle"></div>
-        <div class="add">Add New Task</div></a>
-    </div>
-    <div class="flex_container">
-        <div class="flex_item">
-          <a href="./index2.html" class="page_2"><label for="paris"><h3 class="start"> Trip to Paris</h3></label></a><hr/>
-          <p class="trip"><input type="checkbox" class="line_1" disabled checked> visit Church</p><br>
-          <input type="checkbox" class="line_2" > Shopping
-       </div>
-        <div class="flex_item">
-          <a href="./index2.html" class="page_2"><label for="list"><h3 class="start"> My To Do List</h3></label> </a><hr/>
-            <p class="trip"><input type="checkbox" class="line_1" disabled checked> visit Supermarket</p><br>
-            <input type="checkbox" class="line_2" > Buy Vegetables
+    <nav class="navbar" id="$navbar">
+        <a href="./index.html" class="logo">Tasks <span class="list"> List</span></a>
+    </nav>
+
+    <div class="mainContainer">
+        <div class="newtask" id="$newtask">
+            <a href="./index1.html" class="plusSign" target="_self">+</a>
+            <a href="./index1.html" class="addNewtask" target="_self">Add New Task</a>
         </div>
-        <div class="flex_item">
-            <a href="./index2.html" class="page_2"><label for="routine"><h3 class="start"> Daily Morning Routine for...</h3> </label></a><hr/>
-              <p class="trip"><input type="checkbox" class="line_1" disabled checked> Wake up at 6 AM</p><br>
-              <input type="checkbox" class="line_2" > Sleep at 10 PM
+        <div class="cardContainer">
+            <div class="cards">
+                <h5> <a href="./index2.html">Trip to paris</a></h5>
+                <form action="#">
+                    <div class="checks">
+                        <span class="del"> <input type="checkbox" id="church" name="church" checked> Visit Church</span> <br> <br> 
+                        <input type="checkbox" id="shopping" name="shopping"> Shopping
+                    </div>
+                </form>
+            </div>
+            <div class="cards">
+                <h5>My To Do List</h5>
+                <form action="#">
+                    <div class="checks">
+                        <span class="del"> <input type="checkbox" id="church" name="church" checked> Visit Super market</span> <br> <br> 
+                        <input type="checkbox" id="shopping" name="shopping"> Buy Vegetables
+                    </div>
+                </form>
+            </div>
+            <div class="cards">
+                <h5>Movies I Will Watch</h5>
+                <form action="#">
+                    <div class="checks">
+                        <span class="del"> <input type="checkbox" id="church" name="church" checked> Stranger Things 4</span> <br> <br> 
+                        <input type="checkbox" id="shopping" name="shopping"> Avengers Endgame
+                    </div>
+                </form>
+            </div>
+            
+            <div class="cards">
+                <h5>Daily Morning Routine For...</h5>
+                <form action="#">
+                    <div class="checks">
+                        <span class="del"> <input type="checkbox" id="church" name="church" checked> Wake up at 6 pm</span> <br> <br> 
+                        <input type="checkbox" id="shopping" name="shopping"> Sleep at 10 pm
+                    </div>
+                </form>
+            </div>
+            <div class="cards">
+                <h5>Books To Read</h5>
+                <form action="#">
+                    <div class="checks">
+                        <span class="del"> <input type="checkbox" id="church" name="church" checked> Design of Everyday</span> <br> <br> 
+                        <input type="checkbox" id="shopping" name="shopping"> Alchemist
+                    </div>
+                </form>
+            </div>
         </div>
-    
     </div>
-    
-    
+
 </body>
+
 </html>
