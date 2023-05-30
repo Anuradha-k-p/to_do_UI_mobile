@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to-do-mobile</title>
+    <title>Todo App UI Web</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://kit.fontawesome.com/078812abb6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-    <div class="heading">
-        <h1> <span style="color: #424242;">Tasks</span><span style="color:#00A5EC ;">List</span></h1>
-    </div> 
+    <nav class="navbar" id="$navbar">
+        <a href="./index.html" class="logo">Tasks <span class="list"> List</span></a>
+    </nav>
 
-    <div class="icon">
-        <a href="./index2.html" class="bk"><div class="arrow"><i class="fa-solid fa-arrow-left"></i></div>
-        <div class="back_circle"></div>
-        <div class="back">Back</div></a>
+    <div class="page3container">
+        <div class="page3Options">
+            <div class="back-Contaner">
+                <a href="./index.html" class="back"><i class="fa-solid fa-circle-left" class="back_sign"></i><span class="b-text">Back</span></a>
+            </div>
+            <div class="newtask" id="$newtask">
+                <a href="./newTask.html" class="plusSign" target="_self">+</a>
+                <a href="./newTask.html" class="addNewtask" target="_self">Add New Task</a>
+            </div>
+        </div>
+
+        <div class="page3-cards">
+            <h5 class="page3-h5">Trip To Paris</h5>
+            <form action="#">
+                <div class="checks">
+                    <span class="del"> <input type="checkbox" id="church" name="church" checked> Visit Church</span>
+                    <br> <br>
+                    <input type="checkbox" id="shopping" name="shopping"> Shopping
+                </div>
+            </form>
+        </div>
     </div>
 
-    
-
-
-    <div class="task_11">
-        <div class="plus_1">+</div>
-        <div class="circle_1"></div>
-        <div class="add_1">Add New Task</div>
+    <div class="page4">
+        <div class="popup2">
+            <div class="addnewtask-container">
+                <p class="addnewtask-heading">Add New Item</p>
+                <a href="./index2.html" class="cross"><i class="fa-solid fa-xmark"></i></a>
+                <input type="text" name="c" id="c" placeholder="Visit Famous Places" class="c_input">
+                <button class="addTaskbtn"> + Add Task</button>
+            </div>
+        </div>
     </div>
 
-    <div class="pop_1">
-        <label for="paris"><h3 class="start_1"> Trip to Paris</a></h3></label><hr/>
-        <p class="church"> <input type="checkbox" class="check_1" disabled checked>Visit church <br></p>
-        <input type="checkbox" class="check_2">Shopping
-
-    </div>
 </body>
+
 </html>
